@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Our Services
+
+  each service, i in services
+    .container
+      .card-default
+        .card
+          h3 #{service.name}
+          p  #{service.description}
+          h5 #{service.prices}
